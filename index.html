@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Hourly Time List</title>
+    <script src="/node_modules/angular/angular.min.js"></script>
+    <script src="/node_modules/angular-animate/angular-animate.min.js"></script>
+    <script src="/node_modules/angular-ui-bootstrap/ui-bootstrap-tpls.min.js"></script>
+    <script src="/node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="dist/js/mainController.js"></script>
+    <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="dist/css/main.css">
+</head>
+<body>
+<!--Nav Bar-->
+<nav class="navbar navbar-default">
+    <div class="navbar-header">
+        <label class="navbar-brand">Hourly Time List</label>
+    </div>
+</nav>
+<!--myapp begins-->
+<div ng-app="myapp">
+    <!--Hour List Controller-->
+    <div ng-controller="HourListController">
+        <!--Shows each time slots-->
+        <div ng-repeat="time in timelist">
+            <button ng-class="time.state" ng-click="open(time)">{{time.slot}}</button>
+            <br/>
+            <br/>
+            <!--Modal for user input-->
+            <script type="text/ng-template" id="userinputModal.html">
+                <div class="modal-body">
+                    <label>Name:</label>
+                    <input type="text" data-ng-model = "time.name" />
+                    <br/>
+                    <br/>
+                    <label>Phone:</label>
+                    <input type="text" data-ng-model= "time.phone" />
+                </div>
+                <div class="modal-footer">
+                    <button type="submit" class="btn btn-primary" ng-click="save()">Save</button>
+                    <button type="button" class="btn btn-default" ng-click="cancel()">Cancel</button>
+                </div>
+            </script> <!--Modal End-->
+        </div> <!--Time Slots End-->
+    </div> <!--Controller End-->
+</div> <!--myapp End-->
+</body>
+</html>
