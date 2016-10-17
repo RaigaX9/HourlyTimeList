@@ -16,10 +16,10 @@ box and can edit their information.
 - Node.js - 6.7.0
 
 ##Instructions
-
 1. Clone or download this repo. 
 2. Install Node.js.
 3. Open up the command prompt.
 4. Navigate to the root of this project where `package.json` is at.
-5. Do `npm install`
-6. Run the project doing `node server.js`
+5. Do `npm install`.
+6. Run the project doing `node server.js`.
+7. Go to your browser and type in `localhost:8080` where the app will run.
