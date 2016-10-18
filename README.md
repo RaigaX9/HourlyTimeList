@@ -11,9 +11,9 @@ box and can edit their information.
 - AngularJS - 1.5.8
 - Angular-Animate - 1.5.8
 - Bootstrap - 3.3.7
-- jQuery - 3.1.1
 - Angular UI Bootstrap - 0.13.0
 - Node.js - 6.7.0
+- Express - 4.14.0
 
 ##Instructions
 1. Clone or download this repo. 

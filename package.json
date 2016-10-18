@@ -5,14 +5,9 @@
   "main"         : "server.js",
   "author"       : "Nishad Shah",
   "dependencies" : {
-    "express"    : "~4.7.2",
-    "morgan"	 : "~1.2.2",
-    "method-override": "~2.1.2",
+    "express"    : "~4.14.0",
     "bootstrap"   : "~3.3.7",
-    "body-parser": "~1.5.2",
     "angular": "~1.5.8",
-    "angular-animate": "~1.5.8",
-    "angular-ui-bootstrap": "~0.13.0",
-    "jquery": "~3.1.1"
+    "angular-ui-bootstrap": "~0.13.0"
   }
 }
