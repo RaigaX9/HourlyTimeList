@@ -9,7 +9,6 @@ box and can edit their information.
 
 ##Frameworks and Technologies
 - AngularJS - 1.5.8
-- Angular-Animate - 1.5.8
 - Bootstrap - 3.3.7
 - Angular UI Bootstrap - 0.13.0
 - Node.js - 6.7.0
